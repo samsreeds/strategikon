@@ -1,0 +1,173 @@
+# ページ地図：シェファー版（1664）
+
+- 対象：`source/scheffer1664.pdf`（675画像）
+- 作成：2026-10-08（段階1）
+- 「画像 #n」は PDF の 1 始まりのページ番号。「p.n」は印刷されたページ番号
+- 本文を詳しく読んではいない。位置の特定だけが目的
+
+## 0. PDF とスキャンの基本情報
+
+- 各画像は JPEG 1枚。PDF のページサイズ（pt）は、スキャン画像のピクセル数と一致する（例：#132 = 1152×1872 px）
+  - つまり **72 dpi で書き出すと原寸**（スキャンの解像度そのもの）。72 dpi より上は拡大にすぎない
+- **#1 は MDZ が付けた表紙で、本の一部ではない**（書名・所蔵館・請求記号・URN のみ。権利表示はない）
+- **MDZ のスキャン番号 = PDF の画像番号 − 1**（MDZ は 674 スキャン、PDF は先頭に表紙が 1 枚多い）
+- MDZ の IIIF マニフェスト（`https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb11088428/manifest`）の記載
+  - license：`https://rightsstatements.org/vocab/NoC-NC/1.0/`（**NoC-NC**）
+  - attribution：Regensburg, Staatliche Bibliothek / Bayerische Staatsbibliothek
+  - 請求記号：999/Class.170 ／ URN：urn:nbn:de:bvb:12-bsb11088428-7
+  - 書誌上の数量：[3] Bl., 121, 537 S., [3] Bl.
+  - **Google の記載はない。** CLAUDE.md のクレジット規則（NoC-NC なら "digitized by Google"）を当てはめてよいかは要確認。今のところ、Google によるデジタル化だという根拠は見つかっていない
+  - MDZ のページラベルは、通し番号で機械的に振られている（後述の誤植を反映していない）
+
+## 1. 全体の構成
+
+| 画像 | 印刷ページ | 内容 |
+|---|---|---|
+| #1 | — | MDZ の表紙（本の一部ではない） |
+| #2–#3 | — | 白紙（見返し） |
+| #4 | — | 扉：ARRIANI TACTICA & MAURICII ARTIS MILITARIS LIBRI DUODECIM … UPSALIAE, Excud. Henricus Curio, MDCLXIV |
+| #5 | — | 献辞の見出し（クリスティーナ女王宛て）。所蔵館の蔵書印あり |
+| #6–#7 | — | 献辞の本文（Upsaliae, MDCLXIV、Joannes Schefferus の署名） |
+| #8–#9 | — | 序文 Lectori benivolo S.D. |
+| #10–#88 | p.1–p.79 | **アッリアノス『戦術論』本文**（柱：ARRIANI / TACTICA）。#88 の末尾に "Caetera Arriani desiderantur."（残りは失われている）と飾り |
+| #89–#131 | p.80–p.122 | **アッリアノスへの注**。#89 に見出し "Joannis Schefferi Argentoratensis in Arrianum Annotationes"。#131 に FINIS |
+| #132–#137 | p.1–p.6 | **マウリキオス 序文**。別の扉はなく、#132 の冒頭に ΜΑΥΡΙΚΙΟΥ ΣΤΡΑΤΗΓΙΚΟΝ / MAURICII ARS MILITARIS とあり、そのまま序文が始まる |
+| #137–#147 | p.6–p.16 | **全12巻の総目次**（"Liber Primus, Introductionem continens. Capita Libri primi." から第12巻まで）。#147 の末尾に飾り |
+| #148–#513 | p.17–p.382 | **マウリキオス 第1〜12巻 本文**（下の表） |
+| #514–#668 | p.383–p.537 | **マウリキオスへの注**（Notae） |
+| #668 下半分–#675 | — | **陣形図**（巻末の図版） |
+| #675 | — | 正誤表（Corrigenda）と FINIS |
+
+- **索引はない。** 巻末は図版、正誤表、FINIS で終わる
+- **ページ番号は2系統ある。** アッリアノス（本文と注）が p.1–p.122、マウリキオス（本文と注）が p.1 からの振り直しで p.537 まで
+- ページ番号の位置：偶数ページは左上（柱 MAURICII）、奇数ページは右上（柱 STRATEGICUM）。アッリアノスは ARRIANI / TACTICA、注は NOTÆ
+
+## 2. マウリキオス各巻の開始位置
+
+巻はページの途中で始まるので、ある巻の最後の画像は次の巻の最初の画像と同じになる。見出しはすべて 40 dpi で実際に読んで確認した。
+
+| 巻 | 開始画像 | 印刷ページ | 終了画像（p.） | ラテン語の巻題（版面どおり） | ギリシア語の巻題 |
+|---|---|---|---|---|---|
+| 序文 | #132 | p.1 | #137（p.6） | （題なし。冒頭に MAURICII ARS MILITARIS） | ΜΑΥΡΙΚΙΟΥ ΣΤΡΑΤΗΓΙΚΟΝ |
+| 総目次 | #137 | p.6 | #147（p.16） | Liber Primus, Introductionem continens… | |
+| I | #148 | p.17 | #175（p.44） | MAURICII ARS MILITARIS. LIBER PRIMUS. Introductio. | ΛΟΓΟΣ ΠΡΩΤΟΣ. Εἰσαγωγή |
+| II | #175 | p.44 | #207（p.76） | LIBER SECUNDUS. De ordinatione militiae equestris. | ΛΟΓΟΣ ΔΕΥΤΕΡΟΣ. Περὶ καβαλλαρικῆς παρατάξεως |
+| III | #207 | p.76 | #236（p.105） | LIBER TERTIUS. De collocatione tagmatis. | ΛΟΓΟΣ ΤΡΙΤΟΣ. Περὶ στάσεως τάγματος |
+| IV | #236 | p.105 | #251（p.120） | LIBER QUARTUS. De insidiis. | ΛΟΓΟΣ ΤΕΤΑΡΤΟΣ. Περὶ ἐνέδρας |
+| V | #251 | p.120 | #257（p.126） | LIBER QUINTUS. De impedimentis. | ΛΟΓΟΣ ΠΕΜΠΤΟΣ. Περὶ τούλδου |
+| VI | #257 | p.126 | #264（p.133） | LIBER SEXTUS.（副題なし。第1章は De diversis aciebus & exercitationibus） | ΛΟΓΟΣ ΕΚΤΟΣ |
+| VII | #264 | p.133 | #304（p.173） | LIBER SEPTIMUS. Capita lib. septimi. | ΛΟΓΟΣ ΕΒΔΟΜΟΣ |
+| VII 後半 | #278 | p.147 | （VII の終わりまで） | Ejusdem libri septimi Capita reliqua. | Τοῦ αὐτοῦ Ζ. λόγου Ἕτερα κεφάλαια |
+| VIII | #304 | p.173 | #333（p.201） | LIBER OCTAVUS. Capita libri octavi. | ΛΟΓΟΣ ΟΓΔΟΟΣ. Τοῦ Η. λόγου γνωμικά |
+| IX | #333 | p.201 | #367（p.236） | LIBER NONUS. Capita libri noni. | ΛΟΓΟΣ ΕΝΝΑΤΟΣ |
+| X | #367 | p.236 | #383（p.252） | LIBER DECIMUS. Capita libri Decimi. | ΛΟΓΟΣ ΔΕΚΑΤΟΣ |
+| XI | #383 | p.252 | #421（p.290） | LIBER UNDECIMUS. Capita libri | ΛΟΓΟΣ ΔΕΚΑΤΟΣ（**誤植**。ΕΝΔΕΚΑΤΟΣ のはず） |
+| XII | #421 | p.290 | #513（p.382） | LIBER DUODECIMUS. Cap. libri Duodecimi. | ΛΟΓΟΣ ΔΩΔΕΚΑΤΟΣ |
+
+### 巻の内部構造で気づいたこと（段階2で確かめる）
+
+- **第7巻は2部に分かれている。**
+  - 前半：章の一覧が #264–#265 にあり、#265 で CAPUT PRIMUM（De arte Imperatoria…）が始まる
+  - 後半：#278（p.147）に "Ejusdem libri septimi Capita reliqua"（同じ第7巻の残りの章）とあり、#280（p.149）で章番号が CAPUT PRIMUM に戻る（De non fatigando Imperatore…）
+  - [知識] 現代の校訂版も第7巻を A・B の2部に分ける
+- **第12巻は CAP. II から始まる。**
+  - #421 の "Cap. libri Duodecimi." の直後が CAP. II（Notitia signorum…mixta acie）で、CAP. I の見出しがない
+  - 続いて CAP. III（Acies, quae miscella dicitur）、CAP. IV（Acies prima equitum）、CAP. V（Alia acies）…
+  - #430（p.299）に CAP. VIII（De pedestri acie）があり、#432（p.301）にはこの部分専用の章一覧（ギリシア数字 Ε–Ις = V–XVI…）が入っている
+  - 総目次（#147）が挙げる第12巻の項目は次のとおり：Expositio signorum / Acies quae mixta vocatur / Acies prima equitum / Acies alia / Acies obliqua / Acies recta & retro inflexa / De acie pedestri / Descriptio munimenti aut fossati / Quomodo fera animalia venatione subigi possint
+  - 本文は狩猟の話で終わる（#513 の末尾に飾り）
+  - 注の #627 でシェファーは、自分の写本では章の配列が混乱していたと書いている
+  - [知識] 現代の校訂版は第12巻を A–D の4部に分ける
+- 章の数は、総目次の数と本文の最後の章番号を照合して段階2で確定する
+
+## 3. ページ番号の対応（画像 = 印刷ページ + ずれ）
+
+### アッリアノス（#10–#131）
+
+- ずれは +9 で一定（6画像おきに柱を確認：#10 = p.1、#88 = p.79、#130 = p.121）
+
+### マウリキオス（#132–#668）
+
+基本のずれは +131。ただし印刷の番号誤りが6か所あり、ずれが途中で変わる（柱をすべて目で確かめた範囲）。
+
+| 画像の範囲 | ずれ | 印刷ページ | 原因 |
+|---|---|---|---|
+| #132–#314 | +131 | p.1–p.183 | |
+| #315–#328 | +132 | p.183–p.196 | **p.183 が2回**（#314 と #315） |
+| #329–#330 | +133 | p.196–p.197 | **p.196 が2回**（#328 と #329） |
+| #331–#339 | +132 | p.199–p.207 | **p.198 が抜けている** |
+| #340–#436 | +131 | p.209–p.305 | **p.208 が抜けている** |
+| #437–#450 | +130 | p.307–p.320 | **p.306 が抜けている** |
+| #451–#668 | +131 | p.320–p.537 | **p.320 が2回**（#450 と #451） |
+
+- 照合に使った点：#148=17、#175=44、#207=76、#236=105、#251=120、#257=126、#264=133、#278=147、#304=173、#312=181、#333=201、#367=236、#383=252、#421=290、#430=299、#432=301、#513=382、#514=383、#559=428、#579=448、#610=479、#626=495、#668=537
+- 本文の注や正誤表の「p.○」を画像番号に直すときは、まずこの表を使う。誤植で同じ番号が2回出る p.183・p.196・p.320 は、前後の文脈でどちらか判断する
+
+## 4. 注（Notae）
+
+### アッリアノスへの注
+
+- #89（p.80）–#131（p.122）
+- 見出しは Ad Titulum、Ad Auctorem ipsum… と続く（巻の区切りはない）
+
+### マウリキオスへの注（#514–#668）
+
+| 対象 | 画像 | 印刷ページ | 見出し（版面どおり） |
+|---|---|---|---|
+| 総説・書名 | #514 | p.383 | Joannis Schefferi Argentoratensis In Mauricium Annotationes. Ad Inscriptionem operis. |
+| 序文 | #516 | p.385 | Ad Praefationem. |
+| 総目次 | #517 | p.386 | Ad Indicem librorum capitumque. |
+| 第1巻 | #517 | p.386 | **Ad Scriptorem ipsum.**（"AD LIBRUM I" という見出しはない。第1巻 Cap. I への注は #518） |
+| 第2巻 | #544 | p.413 | AD LIBRUM II. |
+| 第3巻 | #559 | p.428 | AD LIBRUM III. |
+| 第4巻 | #575 | p.444 | AD LIBRUM IV. |
+| 第5巻 | #579 | p.448 | AD LIBRUM V. |
+| 第6巻 | #585 | p.454 | AD LIBRUM VI. |
+| 第7巻 | #590 | p.459 | AD LIBRUM VII. |
+| 第8巻 | #599 | p.468 | AD LIBRUM VIII. |
+| 第9巻 | #603 | p.472 | AD LIBRUM XI.（**誤植**。第8巻と第10巻の間にあり、内容は第9巻 περὶ ἐφόδων への注。原寸で確認した） |
+| 第10巻 | #610 | p.479 | AD LIBRUM X. |
+| 第11巻 | #620 | p.489 | AD LIBRUM XI. |
+| 第12巻 | #626 | p.495 | AD LIBRUM XII.（"Iam alias monui, hunc librum Meursio esse primum." で始まる） |
+| （終わり） | #668 | p.537 | 注の末尾。同じページの下半分から陣形図 |
+
+## 5. 巻末の陣形図
+
+- **版画ではなく、活字を並べた図**（k・T・ρ・μ・b・o・λ などの記号と、ギリシア語のラベル）
+- 図にある「Pag.」はマウリキオス側のページ番号を指す
+  - 根拠1：p.297、p.344 はアッリアノス側（p.122 まで）に存在しない
+  - 根拠2：本文の p.89（#220）と p.93（#224）の余白に "Acies V"、"Acies XI"、"Acies XII" という標識がある
+  - したがって Acies I–XVII は**第3巻**の図、Acies A–E と p.297–p.345 は**第12巻**の図
+
+| 画像 | 図の見出し | 指しているページ → 本文の画像 |
+|---|---|---|
+| #668 下半分 | Acies pertinens ad pag. 89. | p.89 → #220（第3巻） |
+| #669 | Pag.90 Acies VI ／ Acies VII | p.90 → #221 |
+| #670 | Pag.91 Acies VIII ／ Pag.92 Acies IX ／ Acies X | p.91–p.92 → #222–#223 |
+| #671 | Pag.93 Acies XI ／ Acies XII ／ Pag.94 Acies XIII ／ Acies XIV ／ Acies XV ／ Pag.95 Acies XVI ／ Acies XVII | p.93–p.95 → #224–#226 |
+| #672 | Pag.297 Acies A ／ Acies B prima ／ Acies B secunda（**90度回転して組まれている**） | p.297 → #428（第12巻） |
+| #673 | Acies C ／ Pag.239 Acies D ／ Acies E | 「p.239」→ #370 は第10巻（攻城）で、陣形の標識がない。**p.299（#430）の誤植の可能性が高い**（不確か） |
+| #674 | Pag.299（Acies の名前なし。b・o・K などで組んだ図） | p.299 → #430（第12巻、CAP. VIII De pedestri acie） |
+| #675 上半分 | Pag.344 Acies A ／ Acies B ／ Acies C ／ Pag.345 Acies D（ΜΕΤΩΠΟΝ = 正面 と書いた枠の図） | p.344–p.345 → #475–#476（第12巻） |
+
+- 不確か：Acies I–V の図はどこにあるのか。#668 の "Acies pertinens ad pag. 89" が Acies I–V をまとめたものかもしれない。段階3で第3巻の本文と照合する
+- 注の中にも小さな図がある（例：#548 に A・B・C・D・E の枠の図）。段階2で各巻を読むときに拾う
+
+## 6. 読むための解像度（第1巻の最初のページ #148 で試した）
+
+ギリシア語の欄を切り出し、36・50・72・100 dpi で比べた。
+
+| dpi | ギリシア語 | ラテン語 |
+|---|---|---|
+| 36 | 語の形はわかるが、合字（σθαι、καὶ の略字 ϗ など）とアクセント・気息記号がつぶれる | 読める（ただし小さい） |
+| 40 | — | **普通に読める**（ページ全体を3枚並べても読めた） |
+| 50 | ほぼ読めるが、気息記号と曲アクセント、略字の区別があやしい | 楽に読める |
+| **72** | **合字・略字・アクセントまで読める**（ὁπλίζεσθαι、κτᾶσθαι、ϗ τίνα など） | 楽に読める |
+| 100 | 72 と同じ情報量（原寸より上は拡大にすぎない）。文字が大きくなるだけ | — |
+
+### 段階2の手順
+
+- **ラテン語を読む：** 40〜50 dpi でページ全体（約 630×1040 px）。3ページを横に並べて1枚にしてもよい
+- **ギリシア語を確かめる：** **72 dpi（原寸）**で、ギリシア語の欄（ページの左 約55%）を切り出す。必要な部分だけを切り出し、長辺は 2000 px 以内に収める（Read ツールは長辺が約 2000 px を超える画像を縮小する）
+- ページ全体を 72 dpi で書き出すと約 1130×1875 px で、縮小されずにそのまま見られる
+- 試しに使ったスクリプトは scratchpad に置いた（リポジトリには入れていない）。PyMuPDF で `page.get_pixmap(dpi=…, clip=Rect(...), colorspace=csGRAY)` を使えば足りる
