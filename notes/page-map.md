@@ -16,7 +16,7 @@
   - attribution：Regensburg, Staatliche Bibliothek / Bayerische Staatsbibliothek
   - 請求記号：999/Class.170 ／ URN：urn:nbn:de:bvb:12-bsb11088428-7
   - 書誌上の数量：[3] Bl., 121, 537 S., [3] Bl.
-  - **Google の記載はない。** CLAUDE.md のクレジット規則（NoC-NC なら "digitized by Google"）を当てはめてよいかは要確認。今のところ、Google によるデジタル化だという根拠は見つかっていない
+  - **Google の記載はない。** そのため "digitized by Google" はクレジットに付けない（2026-10-08 決定）
   - MDZ のページラベルは、通し番号で機械的に振られている（後述の誤植を反映していない）
 
 ## 1. 全体の構成
