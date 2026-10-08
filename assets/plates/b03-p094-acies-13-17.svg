@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="plate" viewBox="0 0 520 722" role="img" aria-labelledby="b03-p094-acies-13-17-title b03-p094-acies-13-17-desc">
+<title id="b03-p094-acies-13-17-title">第3巻第10章 側面防護兵と包囲兵の図（Acies XIII–XVII）</title>
+<desc id="b03-p094-acies-13-17-desc">Scheffer 1664, 巻末の図 Pag.94 Acies XIII–XV, Pag.95 Acies XVI–XVII（MDZ 画像 #671 下、BSB urn:nbn:de:bvb:12-bsb11088428-7）をもとに作図。本文は第3巻第10章の5つの小見出し（p.94–95、画像 #225–#226）。原典は線と文字だけの模式図で、見出しと図の切れ目があいまいなため（notes/plates.md §3.8）、版面の並びのまま1枚に描いた。ΣΙΨΟ（逆並び）は敵の正面、ΟΨΙΣ は味方の正面か（推測）。縦書きのラベルの向きは原典どおり。位置と線の長さはおおよそ。</desc>
+<style>
+  svg.plate { color: var(--plate-ink, #1f1d1a); }
+  @media (prefers-color-scheme: dark) { svg.plate { color: var(--plate-ink, #ece8e1); } }
+  .plate text { fill: currentColor; font-family: "Times New Roman", "Noto Serif", serif; }
+  .plate .g { font-size: 17px; }
+  .plate .head { font-size: 15px; letter-spacing: 0.06em; }
+  .plate .pag { font-size: 12px; opacity: 0.7; }
+  .plate .lab-up { font-size: 15px; }
+  .plate .lab { font-size: 13px; font-style: italic; }
+  .plate .mk { font-size: 12px; }
+  .plate .rule, .plate .frame { stroke: currentColor; stroke-width: 2.4; fill: none; stroke-linecap: square; }
+  .plate .dash { stroke: currentColor; stroke-width: 1.6; stroke-dasharray: 3 4; fill: none; }
+  .plate .ring { stroke: currentColor; stroke-width: 1.2; fill: none; }
+  .plate .dot { fill: currentColor; stroke: none; }
+</style>
+<text class="head" x="260.0" y="20.0" text-anchor="middle"><tspan class="pag">Pag.94. </tspan>Acies XIII.</text>
+<line class="rule" x1="10.0" y1="34.0" x2="510.0" y2="34.0"/>
+<text class="lab-up" x="194.0" y="60.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab-up" x="238.0" y="60.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="282.0" y="60.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="326.0" y="60.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="396.0" y="60.0" text-anchor="middle" dominant-baseline="central">/</text>
+<text class="head" x="260.0" y="98.0" text-anchor="middle">Acies XIV.</text>
+<text class="lab-up" x="194.0" y="124.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="238.0" y="124.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="282.0" y="124.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="326.0" y="124.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab" x="60.0" y="156.0" text-anchor="middle" dominant-baseline="central">πλαγιοφυλ.</text>
+<text class="lab" x="160.0" y="156.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="245.0" y="156.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="330.0" y="156.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="440.0" y="156.0" text-anchor="middle" dominant-baseline="central">ὑπερκεραστ.</text>
+<line class="rule" x1="10.0" y1="172.0" x2="110.0" y2="172.0"/>
+<line class="rule" x1="135.0" y1="172.0" x2="185.0" y2="172.0"/>
+<line class="rule" x1="220.0" y1="172.0" x2="270.0" y2="172.0"/>
+<line class="rule" x1="305.0" y1="172.0" x2="355.0" y2="172.0"/>
+<line class="rule" x1="390.0" y1="172.0" x2="490.0" y2="172.0"/>
+<text class="lab" x="240.0" y="202.0" text-anchor="middle" dominant-baseline="central">ἡ τῶν ἐχθρῶν τάξις</text>
+<line class="rule" x1="30.0" y1="230.0" x2="450.0" y2="230.0"/>
+<text class="lab" x="510.0" y="216.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 510.0 216.0)">δροῦγγος</text>
+<text class="lab" x="492.0" y="200.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 492.0 200.0)">λανθά-</text>
+<text class="lab" x="474.0" y="184.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 474.0 184.0)">νων</text>
+<text class="lab-up" x="194.0" y="256.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab-up" x="238.0" y="256.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="282.0" y="256.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="326.0" y="256.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="head" x="260.0" y="290.0" text-anchor="middle">Acies XV.</text>
+<text class="lab-up" x="194.0" y="316.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="238.0" y="316.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="282.0" y="316.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="326.0" y="316.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab" x="60.0" y="348.0" text-anchor="middle" dominant-baseline="central">πλαγιοφυλ.</text>
+<text class="lab" x="160.0" y="348.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="245.0" y="348.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="330.0" y="348.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="440.0" y="348.0" text-anchor="middle" dominant-baseline="central">ὑπερκεραστ.</text>
+<line class="rule" x1="10.0" y1="364.0" x2="110.0" y2="364.0"/>
+<line class="rule" x1="135.0" y1="364.0" x2="158.0" y2="364.0"/>
+<line class="rule" x1="162.0" y1="364.0" x2="185.0" y2="364.0"/>
+<line class="rule" x1="220.0" y1="364.0" x2="243.0" y2="364.0"/>
+<line class="rule" x1="247.0" y1="364.0" x2="270.0" y2="364.0"/>
+<line class="rule" x1="305.0" y1="364.0" x2="328.0" y2="364.0"/>
+<line class="rule" x1="332.0" y1="364.0" x2="355.0" y2="364.0"/>
+<line class="rule" x1="395.0" y1="364.0" x2="450.0" y2="364.0"/>
+<text class="head" x="260.0" y="396.0" text-anchor="middle"><tspan class="pag">Pag.95. </tspan>Acies XVI.</text>
+<line class="rule" x1="50.0" y1="410.0" x2="430.0" y2="410.0"/>
+<text class="lab-up" x="194.0" y="434.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab-up" x="238.0" y="434.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="282.0" y="434.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="326.0" y="434.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="194.0" y="458.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="238.0" y="458.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="282.0" y="458.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="326.0" y="458.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab" x="110.0" y="488.0" text-anchor="middle" dominant-baseline="central">μέρος</text>
+<line class="rule" x1="60.0" y1="504.0" x2="160.0" y2="504.0"/>
+<text class="lab" x="250.0" y="488.0" text-anchor="middle" dominant-baseline="central">μέρος</text>
+<line class="rule" x1="200.0" y1="504.0" x2="300.0" y2="504.0"/>
+<text class="lab" x="390.0" y="488.0" text-anchor="middle" dominant-baseline="central">μέρος</text>
+<line class="rule" x1="340.0" y1="504.0" x2="440.0" y2="504.0"/>
+<path class="frame" d="M 40 400 Q 32 456 40 510"/>
+<text class="lab" x="20.0" y="456.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 20.0 456.0)">πλαγιοφυλ.</text>
+<path class="frame" d="M 436 400 Q 446 456 436 510"/>
+<text class="lab" x="458.0" y="456.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 458.0 456.0)">ὑπερκεραστ.</text>
+<text class="lab" x="490.0" y="442.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 490.0 442.0)">δροῦγγος ά</text>
+<circle class="ring" cx="468.0" cy="500.0" r="4"/>
+<circle class="ring" cx="479.0" cy="500.0" r="4"/>
+<circle class="ring" cx="490.0" cy="500.0" r="4"/>
+<circle class="ring" cx="501.0" cy="500.0" r="4"/>
+<circle class="ring" cx="468.0" cy="512.0" r="4"/>
+<circle class="ring" cx="479.0" cy="512.0" r="4"/>
+<circle class="ring" cx="490.0" cy="512.0" r="4"/>
+<circle class="ring" cx="468.0" cy="524.0" r="4"/>
+<circle class="ring" cx="479.0" cy="524.0" r="4"/>
+<circle class="ring" cx="468.0" cy="536.0" r="4"/>
+<text class="head" x="260.0" y="566.0" text-anchor="middle">Acies XVII.</text>
+<text class="lab" x="200.0" y="590.0" text-anchor="middle" dominant-baseline="central">ἡ τῶν ἐχθρῶν</text>
+<text class="lab" x="420.0" y="590.0" text-anchor="middle" dominant-baseline="central">δροῦγγος Γ</text>
+<line class="rule" x1="20.0" y1="604.0" x2="140.0" y2="604.0"/>
+<line class="rule" x1="250.0" y1="604.0" x2="460.0" y2="604.0"/>
+<text class="lab-up" x="194.0" y="628.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab-up" x="238.0" y="628.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="282.0" y="628.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="326.0" y="628.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="194.0" y="652.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="238.0" y="652.0" text-anchor="middle" dominant-baseline="central">Ψ</text>
+<text class="lab-up" x="282.0" y="652.0" text-anchor="middle" dominant-baseline="central">Ι</text>
+<text class="lab-up" x="326.0" y="652.0" text-anchor="middle" dominant-baseline="central">Σ</text>
+<text class="lab" x="110.0" y="682.0" text-anchor="middle" dominant-baseline="central">πλαγιοφύλ.</text>
+<text class="lab" x="210.0" y="682.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="290.0" y="682.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<text class="lab" x="370.0" y="682.0" text-anchor="middle" dominant-baseline="central">μέρος.</text>
+<line class="rule" x1="20.0" y1="706.0" x2="120.0" y2="706.0"/>
+<line class="rule" x1="124.0" y1="706.0" x2="220.0" y2="706.0"/>
+<line class="rule" x1="226.0" y1="706.0" x2="320.0" y2="706.0"/>
+<line class="rule" x1="326.0" y1="706.0" x2="420.0" y2="706.0"/>
+<line class="rule" x1="426.0" y1="706.0" x2="456.0" y2="706.0"/>
+<path class="frame" d="M 462 610 Q 478 658 464 706"/>
+<text class="lab" x="496.0" y="658.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 496.0 658.0)">ὑπερκεραστ.</text>
+</svg>

@@ -1,36 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="plate" viewBox="0 0 420 600" role="img" aria-labelledby="t d">
-<title id="t">第12巻第8章第20節の図 A–D（横の戦列と、一重・二重・四重の縦の密集隊）</title>
-<desc id="d">Scheffer 1664, 巻末の図 Pag.344 Acies A–C, Pag.345 Acies D（MDZ 画像 #675 上半分、BSB urn:nbn:de:bvb:12-bsb11088428-7）をもとに作図。本文は第12巻第8章第20節（p.344–345、画像 #475–#476）。ΜΕΤΟΠΟΝ（正面）は版面の綴りのまま。B の枠にはラベルがない（原典どおり）。原典では枠の辺ごとに線の太さが違うが、ここでは同じ太さで描いた。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" class="plate" viewBox="0 0 420 596" role="img" aria-labelledby="b12-p344-acies-a-d-title b12-p344-acies-a-d-desc">
+<title id="b12-p344-acies-a-d-title">第12巻第8章第20節の図 A–D（横の戦列と、一重・二重・四重の縦の密集隊）</title>
+<desc id="b12-p344-acies-a-d-desc">Scheffer 1664, 巻末の図 Pag.344 Acies A–C, Pag.345 Acies D（MDZ 画像 #675 上半分、BSB urn:nbn:de:bvb:12-bsb11088428-7）をもとに作図。本文は第12巻第8章第20節（p.344–345、画像 #475–#476）。ΜΕΤΟΠΟΝ（正面）は版面の綴りのまま。B の枠にはラベルがない（原典どおり）。原典では枠の辺ごとに線の太さが違うが、ここでは同じ太さで描いた。</desc>
 <style>
   svg.plate { color: var(--plate-ink, #1f1d1a); }
   @media (prefers-color-scheme: dark) { svg.plate { color: var(--plate-ink, #ece8e1); } }
   .plate text { fill: currentColor; font-family: "Times New Roman", "Noto Serif", serif; }
+  .plate .g { font-size: 17px; }
   .plate .head { font-size: 15px; letter-spacing: 0.06em; }
   .plate .pag { font-size: 12px; opacity: 0.7; }
-  .plate .lab { font-size: 15px; }
+  .plate .lab-up { font-size: 15px; }
+  .plate .lab { font-size: 13px; font-style: italic; }
+  .plate .mk { font-size: 12px; }
   .plate .rule, .plate .frame { stroke: currentColor; stroke-width: 2.4; fill: none; stroke-linecap: square; }
+  .plate .dash { stroke: currentColor; stroke-width: 1.6; stroke-dasharray: 3 4; fill: none; }
+  .plate .ring { stroke: currentColor; stroke-width: 1.2; fill: none; }
+  .plate .dot { fill: currentColor; stroke: none; }
 </style>
-<g id="acies-a"><text class="head" x="210.0" y="26" text-anchor="middle"><tspan class="pag">Pag.344. </tspan>Acies A.</text>
+<text class="head" x="210.0" y="26.0" text-anchor="middle"><tspan class="pag">Pag.344. </tspan>Acies A.</text>
 <line class="rule" x1="20" y1="70" x2="52" y2="70"/>
-<text class="lab" x="36" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 36 52)">Μ</text>
+<text class="lab-up" x="36.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 36.0 52.0)">Μ</text>
 <line class="rule" x1="78" y1="70" x2="110" y2="70"/>
-<text class="lab" x="94" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 94 52)">Ε</text>
+<text class="lab-up" x="94.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 94.0 52.0)">Ε</text>
 <line class="rule" x1="136" y1="70" x2="168" y2="70"/>
-<text class="lab" x="152" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 152 52)">Τ</text>
+<text class="lab-up" x="152.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 152.0 52.0)">Τ</text>
 <line class="rule" x1="194" y1="70" x2="226" y2="70"/>
-<text class="lab" x="210" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 210 52)">Ο</text>
+<text class="lab-up" x="210.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 210.0 52.0)">Ο</text>
 <line class="rule" x1="252" y1="70" x2="284" y2="70"/>
-<text class="lab" x="268" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 268 52)">Π</text>
+<text class="lab-up" x="268.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 268.0 52.0)">Π</text>
 <line class="rule" x1="310" y1="70" x2="342" y2="70"/>
-<text class="lab" x="326" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 326 52)">Ο</text>
+<text class="lab-up" x="326.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 326.0 52.0)">Ο</text>
 <line class="rule" x1="368" y1="70" x2="400" y2="70"/>
-<text class="lab" x="384" y="52" text-anchor="middle" dominant-baseline="central" transform="rotate(90 384 52)">Ν</text>
-</g>
-<g id="acies-b"><text class="head" x="80" y="112" text-anchor="middle">Acies B.</text><rect class="frame" x="60" y="126" width="40" height="190"/></g>
-<g id="acies-c"><text class="head" x="300" y="112" text-anchor="middle">Acies C.</text><text class="lab" x="232" y="143.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 143.0)">Ν</text><text class="lab" x="232" y="169.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 169.0)">Ο</text><text class="lab" x="232" y="195.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 195.0)">Π</text><text class="lab" x="232" y="221.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 221.0)">Ο</text><text class="lab" x="232" y="247.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 247.0)">Τ</text><text class="lab" x="232" y="273.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 273.0)">Ε</text><text class="lab" x="232" y="299.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232 299.0)">Μ</text><rect class="frame" x="246" y="126" width="40" height="190"/><rect class="frame" x="314" y="126" width="40" height="190"/><text class="lab" x="368" y="143.0" text-anchor="middle" dominant-baseline="central">Μ</text><text class="lab" x="368" y="169.0" text-anchor="middle" dominant-baseline="central">Ε</text><text class="lab" x="368" y="195.0" text-anchor="middle" dominant-baseline="central">Τ</text><text class="lab" x="368" y="221.0" text-anchor="middle" dominant-baseline="central">Ο</text><text class="lab" x="368" y="247.0" text-anchor="middle" dominant-baseline="central">Π</text><text class="lab" x="368" y="273.0" text-anchor="middle" dominant-baseline="central">Ο</text><text class="lab" x="368" y="299.0" text-anchor="middle" dominant-baseline="central">Ν</text></g>
-<g id="acies-d"><text class="head" x="210.0" y="362" text-anchor="middle"><tspan class="pag">Pag.345. </tspan>Acies D.</text>
-<text class="lab" x="40" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 394.0)">Ν</text><text class="lab" x="40" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 422.0)">Ο</text><text class="lab" x="40" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 450.0)">Π</text><text class="lab" x="40" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 478.0)">Ο</text><text class="lab" x="40" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 506.0)">Τ</text><text class="lab" x="40" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 534.0)">Ε</text><text class="lab" x="40" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40 562.0)">Μ</text><rect class="frame" x="54" y="376" width="36" height="204"/>
-<text class="lab" x="118" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 394.0)">Ν</text><text class="lab" x="118" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 422.0)">Ο</text><text class="lab" x="118" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 450.0)">Π</text><text class="lab" x="118" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 478.0)">Ο</text><text class="lab" x="118" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 506.0)">Τ</text><text class="lab" x="118" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 534.0)">Ε</text><text class="lab" x="118" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118 562.0)">Μ</text><rect class="frame" x="132" y="376" width="36" height="204"/>
-<rect class="frame" x="252" y="376" width="36" height="204"/><text class="lab" x="302" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 394.0)">Μ</text><text class="lab" x="302" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 422.0)">Ε</text><text class="lab" x="302" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 450.0)">Τ</text><text class="lab" x="302" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 478.0)">Ο</text><text class="lab" x="302" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 506.0)">Π</text><text class="lab" x="302" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 534.0)">Ο</text><text class="lab" x="302" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302 562.0)">Ν</text>
-<rect class="frame" x="330" y="376" width="36" height="204"/><text class="lab" x="380" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 394.0)">Μ</text><text class="lab" x="380" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 422.0)">Ε</text><text class="lab" x="380" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 450.0)">Τ</text><text class="lab" x="380" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 478.0)">Ο</text><text class="lab" x="380" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 506.0)">Π</text><text class="lab" x="380" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 534.0)">Ο</text><text class="lab" x="380" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380 562.0)">Ν</text>
-</g></svg>
+<text class="lab-up" x="384.0" y="52.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 384.0 52.0)">Ν</text>
+<text class="head" x="80.0" y="112.0" text-anchor="middle">Acies B.</text>
+<rect class="frame" x="60" y="126" width="40" height="190"/>
+<text class="head" x="300.0" y="112.0" text-anchor="middle">Acies C.</text>
+<text class="lab-up" x="232.0" y="143.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 143.0)">Ν</text>
+<text class="lab-up" x="232.0" y="169.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 169.0)">Ο</text>
+<text class="lab-up" x="232.0" y="195.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 195.0)">Π</text>
+<text class="lab-up" x="232.0" y="221.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 221.0)">Ο</text>
+<text class="lab-up" x="232.0" y="247.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 247.0)">Τ</text>
+<text class="lab-up" x="232.0" y="273.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 273.0)">Ε</text>
+<text class="lab-up" x="232.0" y="299.0" text-anchor="middle" dominant-baseline="central" transform="rotate(180 232.0 299.0)">Μ</text>
+<rect class="frame" x="246" y="126" width="40" height="190"/>
+<rect class="frame" x="314" y="126" width="40" height="190"/>
+<text class="lab-up" x="368.0" y="143.0" text-anchor="middle" dominant-baseline="central">Μ</text>
+<text class="lab-up" x="368.0" y="169.0" text-anchor="middle" dominant-baseline="central">Ε</text>
+<text class="lab-up" x="368.0" y="195.0" text-anchor="middle" dominant-baseline="central">Τ</text>
+<text class="lab-up" x="368.0" y="221.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="368.0" y="247.0" text-anchor="middle" dominant-baseline="central">Π</text>
+<text class="lab-up" x="368.0" y="273.0" text-anchor="middle" dominant-baseline="central">Ο</text>
+<text class="lab-up" x="368.0" y="299.0" text-anchor="middle" dominant-baseline="central">Ν</text>
+<text class="head" x="210.0" y="362.0" text-anchor="middle"><tspan class="pag">Pag.345. </tspan>Acies D.</text>
+<text class="lab-up" x="40.0" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 394.0)">Ν</text>
+<text class="lab-up" x="40.0" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 422.0)">Ο</text>
+<text class="lab-up" x="40.0" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 450.0)">Π</text>
+<text class="lab-up" x="40.0" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 478.0)">Ο</text>
+<text class="lab-up" x="40.0" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 506.0)">Τ</text>
+<text class="lab-up" x="40.0" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 534.0)">Ε</text>
+<text class="lab-up" x="40.0" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 40.0 562.0)">Μ</text>
+<rect class="frame" x="54" y="376" width="36" height="204"/>
+<text class="lab-up" x="118.0" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 394.0)">Ν</text>
+<text class="lab-up" x="118.0" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 422.0)">Ο</text>
+<text class="lab-up" x="118.0" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 450.0)">Π</text>
+<text class="lab-up" x="118.0" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 478.0)">Ο</text>
+<text class="lab-up" x="118.0" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 506.0)">Τ</text>
+<text class="lab-up" x="118.0" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 534.0)">Ε</text>
+<text class="lab-up" x="118.0" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 118.0 562.0)">Μ</text>
+<rect class="frame" x="132" y="376" width="36" height="204"/>
+<rect class="frame" x="252" y="376" width="36" height="204"/>
+<text class="lab-up" x="302.0" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 394.0)">Μ</text>
+<text class="lab-up" x="302.0" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 422.0)">Ε</text>
+<text class="lab-up" x="302.0" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 450.0)">Τ</text>
+<text class="lab-up" x="302.0" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 478.0)">Ο</text>
+<text class="lab-up" x="302.0" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 506.0)">Π</text>
+<text class="lab-up" x="302.0" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 534.0)">Ο</text>
+<text class="lab-up" x="302.0" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 302.0 562.0)">Ν</text>
+<rect class="frame" x="330" y="376" width="36" height="204"/>
+<text class="lab-up" x="380.0" y="394.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 394.0)">Μ</text>
+<text class="lab-up" x="380.0" y="422.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 422.0)">Ε</text>
+<text class="lab-up" x="380.0" y="450.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 450.0)">Τ</text>
+<text class="lab-up" x="380.0" y="478.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 478.0)">Ο</text>
+<text class="lab-up" x="380.0" y="506.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 506.0)">Π</text>
+<text class="lab-up" x="380.0" y="534.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 534.0)">Ο</text>
+<text class="lab-up" x="380.0" y="562.0" text-anchor="middle" dominant-baseline="central" transform="rotate(90 380.0 562.0)">Ν</text>
+</svg>

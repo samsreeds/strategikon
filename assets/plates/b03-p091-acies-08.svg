@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="plate" viewBox="0 0 790 892" role="img" aria-labelledby="b03-p091-acies-08-title b03-p091-acies-08-desc">
+<title id="b03-p091-acies-08-title">第3巻第8章 第二線と輜重（Acies VIII）</title>
+<desc id="b03-p091-acies-08-desc">Scheffer 1664, 巻末の図 Pag.91 Acies VIII（MDZ 画像 #670 上、BSB urn:nbn:de:bvb:12-bsb11088428-7）をもとに作図。本文は第3巻第8章（p.91、画像 #222）。λ は荷駄（ラベル ἀδέστρατα による）。見出し行の p・b・U・K と印の意味は不明（notes/plates.md）。記号の数と並びは原典どおり。位置は原典の画像から測った座標を縮めたもの（等間隔にはそろえていない）。第3巻の図の記号の多くは、写本に凡例がなく意味が決められない（notes/plates.md §2）。</desc>
+<style>
+  svg.plate { color: var(--plate-ink, #1f1d1a); }
+  @media (prefers-color-scheme: dark) { svg.plate { color: var(--plate-ink, #ece8e1); } }
+  .plate text { fill: currentColor; font-family: "Times New Roman", "Noto Serif", serif; }
+  .plate .g { font-size: 17px; }
+  .plate .head { font-size: 15px; letter-spacing: 0.06em; }
+  .plate .pag { font-size: 12px; opacity: 0.7; }
+  .plate .lab-up { font-size: 15px; }
+  .plate .lab { font-size: 13px; font-style: italic; }
+  .plate .mk { font-size: 12px; }
+  .plate .rule, .plate .frame { stroke: currentColor; stroke-width: 2.4; fill: none; stroke-linecap: square; }
+  .plate .dash { stroke: currentColor; stroke-width: 1.6; stroke-dasharray: 3 4; fill: none; }
+  .plate .ring { stroke: currentColor; stroke-width: 1.2; fill: none; }
+  .plate .dot { fill: currentColor; stroke: none; }
+</style>
+<text class="head" x="394.4" y="39.2" text-anchor="middle" dominant-baseline="central">Pag.91. Acies VIII.</text>
+<text class="g" x="39.2" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="68.0" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="dot" cx="68.0" cy="104.7" r="2.3"/>
+<text class="g" x="90.1" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="108.3" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="122.7" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="149.6" y="120.8" text-anchor="middle" dominant-baseline="central">U</text>
+<circle class="dot" cx="149.6" cy="104.7" r="2.3"/>
+<text class="g" x="183.2" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="207.2" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="dot" cx="207.2" cy="104.7" r="2.3"/>
+<text class="g" x="230.2" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="263.8" y="120.8" text-anchor="middle" dominant-baseline="central">K</text>
+<text class="g" x="288.8" y="120.8" text-anchor="middle" dominant-baseline="central">K</text>
+<text class="g" x="322.4" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="353.1" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="ring" cx="353.1" cy="104.7" r="2.6"/>
+<text class="g" x="375.2" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="405.9" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="423.2" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="457.8" y="120.8" text-anchor="middle" dominant-baseline="central">U</text>
+<text class="g" x="482.7" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="500.0" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="529.8" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="555.7" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="dot" cx="555.7" cy="104.7" r="2.3"/>
+<text class="g" x="575.8" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="606.6" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="629.6" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="ring" cx="629.6" cy="104.7" r="2.6"/>
+<text class="g" x="651.7" y="120.8" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="674.7" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="689.1" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="711.2" y="120.8" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="dot" cx="711.2" cy="104.7" r="2.3"/>
+<text class="g" x="734.2" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="748.6" y="120.8" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="514.4" y="184.2" text-anchor="middle" dominant-baseline="central">(</text>
+<text class="g" x="529.8" y="184.2" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="552.8" y="184.2" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="ring" cx="552.8" cy="168.0" r="2.6"/>
+<text class="g" x="574.9" y="184.2" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="597.0" y="184.2" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="ring" cx="597.0" cy="168.0" r="2.6"/>
+<text class="g" x="620.0" y="184.2" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="641.1" y="184.2" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="656.5" y="184.2" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="682.4" y="184.2" text-anchor="middle" dominant-baseline="central">U</text>
+<circle class="dot" cx="682.4" cy="168.0" r="2.3"/>
+<text class="g" x="707.4" y="184.2" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="730.4" y="184.2" text-anchor="middle" dominant-baseline="central">μ</text>
+<circle class="dot" cx="730.4" cy="168.0" r="2.3"/>
+<text class="g" x="752.5" y="184.2" text-anchor="middle" dominant-baseline="central">p</text>
+<text class="g" x="212.0" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="233.9" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="255.8" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="277.7" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="299.6" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="321.4" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="343.3" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="365.2" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="387.1" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="409.0" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="430.9" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="452.8" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="474.7" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="496.5" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="518.4" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="540.3" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="562.2" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="584.1" y="225.4" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="151.5" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="173.4" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="195.3" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="217.2" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="239.1" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="285.0" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="307.2" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="329.5" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="351.8" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="374.0" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="420.3" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="442.4" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="464.5" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="486.6" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="508.6" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="555.7" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="576.8" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="597.9" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="619.0" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="640.2" y="267.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="151.5" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="173.4" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="195.3" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="217.2" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="239.1" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="285.0" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="307.2" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="329.5" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="351.8" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="374.0" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="420.3" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="442.4" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="464.5" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="486.6" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="508.6" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="555.7" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="576.8" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="597.9" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="619.0" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="640.2" y="299.8" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="151.5" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="173.4" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="195.3" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="217.2" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="239.1" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="285.0" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="307.2" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="329.5" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="351.8" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="374.0" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="420.3" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="442.4" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="464.5" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="486.6" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="508.6" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="555.7" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="576.8" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="597.9" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="619.0" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="640.2" y="332.0" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="151.5" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="173.4" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="195.3" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="217.2" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="239.1" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="285.0" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="307.2" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="329.5" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="351.8" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="374.0" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="420.3" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="442.4" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="464.5" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="486.6" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="508.6" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="555.7" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="576.8" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="597.9" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="619.0" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="640.2" y="364.2" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="151.5" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="173.4" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="195.3" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="217.2" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="239.1" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="285.0" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="307.2" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="329.5" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="351.8" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="374.0" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="420.3" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="442.4" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="464.5" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="486.6" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="508.6" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="555.7" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="576.8" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="597.9" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="619.0" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="640.2" y="396.3" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="lab" x="236.0" y="442.4" text-anchor="middle" dominant-baseline="central">ὁ τοῦλδος</text>
+<text class="lab" x="502.9" y="442.4" text-anchor="middle" dominant-baseline="central">ἀδεστρ. ά τάξις</text>
+<text class="lab" x="202.4" y="490.4" text-anchor="middle" dominant-baseline="central">νωτοφύλακες</text>
+<text class="lab" x="605.6" y="490.4" text-anchor="middle" dominant-baseline="central">νωτοφύλακες</text>
+<text class="g" x="191.8" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="213.9" y="530.7" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="236.0" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="282.1" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="304.5" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="327.0" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="349.5" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="371.9" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="418.4" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="439.9" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="461.4" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="482.9" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="504.4" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="525.9" y="530.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="573.0" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="594.1" y="530.7" text-anchor="middle" dominant-baseline="central">b</text>
+<text class="g" x="615.2" y="530.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="191.8" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="213.9" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="236.0" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="282.1" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="304.5" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="327.0" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="349.5" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="371.9" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="418.4" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="439.9" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="461.4" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="482.9" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="504.4" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="525.9" y="562.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="573.0" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="594.1" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="615.2" y="562.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="191.8" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="213.9" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="236.0" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="282.1" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="304.5" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="327.0" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="349.5" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="371.9" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="418.4" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="439.9" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="461.4" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="482.9" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="504.4" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="525.9" y="594.7" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="573.0" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="594.1" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="615.2" y="594.7" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="191.8" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="213.9" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="236.0" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="282.1" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="304.5" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="327.0" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="349.5" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="371.9" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="418.4" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="439.9" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="461.4" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="482.9" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="504.4" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="525.9" y="626.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="573.0" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="594.1" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="615.2" y="626.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="191.8" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="213.9" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="236.0" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="282.1" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="304.5" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="327.0" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="349.5" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="371.9" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="418.4" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="439.9" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="461.4" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="482.9" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="504.4" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="525.9" y="658.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="573.0" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="594.1" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="g" x="615.2" y="658.6" text-anchor="middle" dominant-baseline="central">k</text>
+<text class="lab" x="400.2" y="706.4" text-anchor="middle" dominant-baseline="central">ἀδέστρατα β τάξις</text>
+<text class="g" x="293.6" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="314.9" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="336.2" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="357.5" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="378.8" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="400.2" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="421.5" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="442.8" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="464.1" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="485.4" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="506.7" y="750.6" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="293.6" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="314.9" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="336.2" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="357.5" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="378.8" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="400.2" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="421.5" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="442.8" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="464.1" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="485.4" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="506.7" y="783.9" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="293.6" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="314.9" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="336.2" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="357.5" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="378.8" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="400.2" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="421.5" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="442.8" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="464.1" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="485.4" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="506.7" y="817.2" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="293.6" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="314.9" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="336.2" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="357.5" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="378.8" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="400.2" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="421.5" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="442.8" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="464.1" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="485.4" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+<text class="g" x="506.7" y="850.5" text-anchor="middle" dominant-baseline="central">λ</text>
+</svg>
