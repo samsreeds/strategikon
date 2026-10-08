@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>諸民族の地図 — ストラテギコン図解</title>
+<meta name="description" content="『ストラテギコン』第11巻に出てくる諸民族（ペルシア人、アヴァール人・トルコ人、フランク人・ランゴバルド人、スラヴ人・アンテス人）を地図で示し、本の中でどう描かれているかをまとめます。">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" defer></script>
+<style>
+  :root {
+    --p-persia: #a0522d; --p-steppe: #2f6f8f; --p-west: #6b5b95; --p-slav: #3d7d4a;
+    --map-sea: #e6eef2; --map-land: #f3efe6; --map-river: #5f8fb0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --p-persia: #e0a07a; --p-steppe: #7fbcd9; --p-west: #b4a6dd; --p-slav: #8fcb98;
+      --map-sea: #1b2329; --map-land: #2a2823; --map-river: #6d9cbd;
+    }
+  }
+  :root[data-theme="dark"] {
+    --p-persia: #e0a07a; --p-steppe: #7fbcd9; --p-west: #b4a6dd; --p-slav: #8fcb98;
+    --map-sea: #1b2329; --map-land: #2a2823; --map-river: #6d9cbd;
+  }
+  #map svg { display: block; width: 100%; height: auto; min-width: 600px; color: var(--ink); }
+  #map .msg { padding: 1rem; color: var(--ink-soft); font-size: 0.9rem; }
+  #map text { font-family: var(--sans); paint-order: stroke; stroke: var(--map-land); stroke-width: 3px; stroke-linejoin: round; }
+  #map a:hover text, #map a:focus text { text-decoration: underline; }
+  .swatch { display: inline-block; width: 0.9em; height: 0.9em; border-radius: 50%; vertical-align: -0.1em; margin-right: 0.3em; }
+  .people-h { border-left: 6px solid var(--c); padding-left: 0.5rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="site-title" href="index.html">ストラテギコン図解</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="index.html">全体像</a>
+      <a href="intro.html">導入</a>
+      <a href="index.html#books">巻の一覧</a>
+      <a href="glossary.html">用語集</a>
+    </nav>
+    <button class="theme-toggle" type="button">暗い表示へ</button>
+  </div>
+</header>
+
+<main>
+
+<p class="meta">ストラテギコン図解 地図</p>
+<h1>諸民族の地図
+  <span class="sub">第11巻「諸民族の戦い方」の4つのグループと、ほかの巻に出てくる民族</span>
+</h1>
+
+<h2 id="three">このページを3行で</h2>
+<ul class="summary3">
+  <li><a href="books/book-11.html">第11巻</a>は、帝国を悩ませる民族を<strong>4つのグループ</strong>に分け、性格・武装・戦い方・弱点と、それへの対し方を述べます。</li>
+  <li>4つのグループは、帝国の<strong>東（ペルシア）、北のドナウ川の向こう（アヴァール人・トルコ人、スラヴ人・アンテス人）、西（フランク人・ランゴバルド人）</strong>にいました。</li>
+  <li>このページでは、その場所を地図で示し、第11巻以外の巻にどう出てくるかもまとめます。</li>
+</ul>
+
+<p>このページの地図の位置と範囲は、原典にない一般的な知識（<span class="k">補足</span>）による大まかなものです。原典は民族の住む場所をほとんど書いていません。例外は、スラヴ人とアンテス人がドナウ川の向こうに住むこと（第11巻第5章）と、各地名です。</p>
+
+<!-- ============================================================ -->
+<h2 id="map-h">地図</h2>
+<figure>
+<div class="plate wide">
+  <div id="map"><p class="msg">地図を読み込んでいます。表示されない場合は、下の各民族の説明をご覧ください（地図には JavaScript とインターネット接続が必要です）。</p></div>
+  <p class="plate-hint">横にスクロールできます</p>
+</div>
+<figcaption>
+  <span class="swatch" style="background:var(--p-persia)"></span>ペルシア人
+  <span class="swatch" style="background:var(--p-steppe)"></span>スキタイ人（アヴァール人・トルコ人）
+  <span class="swatch" style="background:var(--p-slav)"></span>スラヴ人・アンテス人
+  <span class="swatch" style="background:var(--p-west)"></span>金髪の民族（フランク人・ランゴバルド人）
+  <br>円は6世紀末のおおよその中心地で、境界ではありません。民族名を押すと、下の説明へ移ります。<span class="src">位置は一般的な知識による（補足）。海岸線は現在のもの（Natural Earth、world-atlas）。ドナウ川の線は主な町を結んだ近似</span>
+</figcaption>
+</figure>
+
+<!-- ============================================================ -->
+<section id="persians">
+<h2 class="people-h" style="--c:var(--p-persia)">ペルシア人</h2>
+<p><span class="k">補足</span>帝国の東の大国、ササン朝ペルシア。都はティグリス川のほとりのクテシフォン。ローマとは数百年にわたって争い、572〜591年にも長い戦争がありました。</p>
+<h3>この本が描く姿</h3>
+<ul>
+  <li>ずるく、腹の内を隠すが、祖国を愛し、恐れによって支配者によく従う。計画と隊形を重んじ、<strong>攻城がうまく、籠城するとさらに手ごわい</strong>。</li>
+  <li>鎧と弓と剣。同じ大きさの3つの部分に並び、中央に選り抜きの400〜500人。夏の暑い時間に戦いを引き延ばす。</li>
+  <li>寒さと雨、接近戦、側面と背後、夜襲に弱い。だから<strong>平地で、矢の距離に入ったらすばやく突撃し、側面から回る</strong>（<a href="books/book-11.html#ch2">第11巻第2章</a>）。</li>
+</ul>
+<h3>ほかの巻での登場</h3>
+<ul>
+  <li><a href="books/book-01.html#ch1">第1巻第1章</a>：「ローマ式でもペルシア式でもよいから」速く射る練習。<a href="books/book-12.html#ch8">第12巻第8章</a>にも、軽装兵がローマ式とペルシア式の両方で射る練習があります。</li>
+  <li><a href="books/book-02.html#ch1">第2巻第1章</a>：ローマ人とペルシア人は一つの戦列だけで戦うが、それはよくない、と著者は言います。</li>
+  <li><a href="books/book-04.html#ch3">第4巻第3章</a>：エフタルがペルシア王ペーローズを隠し壕で破った実例。</li>
+  <li><a href="books/book-09.html#ch3">第9巻第3章</a>：「ペルシアでのことで知った」毒の話。</li>
+  <li><a href="books/book-10.html#ch1">第10巻第1章</a>：ローマとペルシアの国境の地方アルザネネで、砦を攻めていた指揮官が捕らえられた実例。</li>
+</ul>
+</section>
+
+<section id="scythians">
+<h2 class="people-h" style="--c:var(--p-steppe)">スキタイ人（アヴァール人・トルコ人）</h2>
+<p>この本の「スキタイ人」は、古代のスキタイ人ではなく、北方の騎馬民族をまとめて呼ぶ古風な名です。第11巻第3章の題は「アヴァール人、トルコ人、そのほか同じ暮らし方をするフン系の民族」です。</p>
+<p><span class="k">補足</span><strong>アヴァール人</strong>は6世紀後半にパンノニア（今のハンガリー）を本拠とし、カガン（君主）の下でバルカン半島を繰り返し荒らしました。<strong>トルコ人</strong>は中央アジアの突厥で、ローマとは568年ごろから使節を交わしていました。シェファーは、アヴァール人の名がローマで初めて聞かれたのは562年ごろだと注に書いています（注 p.490）。</p>
+<h3>この本が描く姿</h3>
+<ul>
+  <li>トルコ人とアヴァール人だけが戦いの隊形に気を配る。アヴァール人は一人の支配の下にあり、きわめてずるく、戦争の経験が豊か。</li>
+  <li>槍を肩にかけ、弓を手に持つ。主だった者の馬にも鉄かフェルトの覆い。大勢の家畜を連れ、氏族ごとに散らばって放牧する。</li>
+  <li>いくつものかたまりを密につなげた一つの戦列。遠くからの戦い、伏兵、偽りの退却が得意で、<strong>勝つと敵を滅ぼすまで追う</strong>。</li>
+  <li>牧草の欠乏、密集した歩兵、逃亡者が出ることに弱い（<a href="books/book-11.html#ch3">第11巻第3章</a>）。</li>
+</ul>
+<h3>ほかの巻での登場</h3>
+<ul>
+  <li><a href="books/book-01.html#ch2">第1巻第2章</a>：槍の革ひもと小旗、首当て、馬の胸当て、衣服などが「アヴァール式」。天幕は「アヴァール式かトルコ式」がよい。</li>
+  <li><a href="books/book-02.html#ch1">第2巻第1章</a>：アヴァール人とトルコ人は第二線、ときに第三線を置く。著者はこれを見習うべきだと言います。</li>
+  <li><a href="books/book-04.html#ch2">第4巻第2章</a>：スキタイ式の伏兵（偽りの敗走と挟み撃ち）。</li>
+  <li><a href="books/book-06.html#ch1">第6巻</a>：見せかけの戦列の型の一つが「スキタイ式」。</li>
+  <li><a href="books/book-07.html#fig-enemy">第7巻前半第1章</a>：スキタイ系・フン系の民族は、冬の苦労で馬が弱っている2月か3月ごろに攻める。<a href="books/book-07.html#b11">後半第11章</a>：敗れてすぐまた戦うのはスキタイ人だけ。</li>
+  <li><a href="books/book-09.html#ch2">第9巻第2章</a>：アヴァールのカガンが、ヘラクレアの近くでローマの騎兵に夜襲をかけた実例。</li>
+  <li><a href="books/book-12.html#ch1">第12巻第1章</a>：第11巻が、この民族に対して勧める混成戦列（「後ろへ曲がった戦列」）。</li>
+</ul>
+</section>
+
+<section id="slavs">
+<h2 class="people-h" style="--c:var(--p-slav)">スラヴ人・アンテス人</h2>
+<p>原典は、彼らがドナウ川の向こうに住み、その川はドナウに流れ込む、と書いています（<a href="books/book-11.html#ch5">第11巻第5章</a>）。<span class="k">補足</span>スラヴ人は6世紀にドナウ川下流の北に広がり、アンテス人はその東、黒海の北西に住んでいました。6世紀末から7世紀にかけて、スラヴ人はバルカン半島に大規模に移り住みます。</p>
+<h3>この本が描く姿</h3>
+<ul>
+  <li>自由で、支配されることに従わない。よそ者に親切で、捕虜をいつまでも奴隷にしない。キビとアワが豊か。</li>
+  <li>森、川、沼に住み、水の中に葦で息をして潜む。小さな投げ槍2本と、毒を塗った小さな矢。</li>
+  <li>首長がなく互いに不和で、正面からの会戦をしない。だから<strong>冬に攻め</strong>、<strong>2方向から攻め入り</strong>、王たちを言葉や贈り物で分断する（<a href="books/book-11.html#ch5">第11巻第5章</a>）。</li>
+</ul>
+<h3>ほかの巻での登場</h3>
+<ul>
+  <li><a href="books/book-09.html#ch3">第9巻第3章</a>：スラヴ人やアンテス人のように、数は多くても隊形も首領もない民族には、敵地に入っても安全。</li>
+  <li><a href="books/book-12.html#ch8">第12巻第8章第20節</a>：森や狭い場所で、特にスラヴ人やアンテス人と戦うときの歩兵の装備と隊形（<a href="books/book-12.html#fig-forest">森を抜ける4つの隊形の図</a>）。</li>
+</ul>
+<p>シェファーは、アンテス人はユスティニアヌス帝の時代に初めて知られたので、第11巻の「昔の人が述べたこと」の「昔の人」は古い書物ではないだろう、と注に書いています（注 p.495）。著者がアンテス人との戦争に加わったらしいことは、シェファーが作者を論じる手がかりの一つです（<a href="intro.html#author">導入</a>）。</p>
+</section>
+
+<section id="fairhaired">
+<h2 class="people-h" style="--c:var(--p-west)">金髪の民族（フランク人・ランゴバルド人）</h2>
+<p><span class="k">補足</span><strong>フランク人</strong>はガリア（今のフランス）を治めていました。<strong>ランゴバルド人</strong>は568年にイタリアに入り、北イタリアを中心に、帝国とイタリアの支配を争っていました。帝国はラヴェンナを拠点にイタリアの一部を保っていました。</p>
+<h3>この本が描く姿</h3>
+<ul>
+  <li>自由を重んじ、大胆で死を恐れない。盾と槍と、肩にかけた短い剣。狭い所では馬を降りて徒歩で戦う。</li>
+  <li>部族ごと、血縁で並び、突撃は激しい。しかし指揮官に従わず、苦労や暑さ寒さ、食糧やぶどう酒の欠乏に弱い。</li>
+  <li>だから<strong>すぐには戦わず、引き延ばして疲れさせ、伏兵と策略で</strong>（<a href="books/book-11.html#ch4">第11巻第4章</a>）。</li>
+</ul>
+<h3>ほかの巻での登場</h3>
+<ul>
+  <li><a href="books/book-03.html#ch5">第3巻第5章</a>：前列の兵が盾で頭と馬の首を覆い、槍を肩に立てて進む突撃の姿勢は、「金髪の民族」のやり方。</li>
+  <li><a href="books/book-04.html#ch1">第4巻第1章</a>：兵力の大きいほうを伏兵にする策は、フランク人など規律のない民族に役に立つ。</li>
+</ul>
+<p>シェファーは、剣を肩から背中にかける習慣が、17世紀のアルザスやシュヴァーベンの農民にも見られると注に書いています（注 p.493）。</p>
+</section>
+
+<!-- ============================================================ -->
+<h2 id="others">そのほかに出てくる民族と地名</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>名前</th><th>本の中で</th><th>場所</th></tr></thead>
+  <tbody>
+    <tr><td>エフタル</td><td>ペルシア王ペーローズを隠し壕と偽りの敗走で破った（<span class="k">補足</span>484年）</td><td><a href="books/book-04.html#ch3">第4巻第3章</a></td></tr>
+    <tr><td>ゴート人</td><td>ドナウを渡って侵入し、沼に誘い込んでデキウス帝を破った（<span class="k">補足</span>251年）。歩兵の靴は「ゴート風」</td><td><a href="books/book-04.html#ch3">第4巻第3章</a>、<a href="books/book-12.html#ch8">第12巻第8章</a></td></tr>
+    <tr><td>ブルガリア風</td><td>歩兵は「ブルガリア風の外套」を着ない</td><td><a href="books/book-12.html#ch8">第12巻第8章</a></td></tr>
+    <tr><td>フン系の民族</td><td>第11巻第3章の題で、アヴァール人・トルコ人と同じ暮らし方の民族として</td><td><a href="books/book-11.html#ch3">第11巻第3章</a>、<a href="books/book-07.html#fig-enemy">第7巻</a></td></tr>
+    <tr><td>アラン式・アフリカ式・イッリュリア式</td><td>戦列の型の名前（民族そのものの話ではない）</td><td><a href="books/book-06.html#fig-types">第6巻</a></td></tr>
+    <tr><td>アルザネネ</td><td>砦を攻めていたとき、指揮官の何人かが捕らえられた（<span class="k">補足</span>ローマとペルシアの国境の地方）</td><td><a href="books/book-10.html#ch1">第10巻第1章</a></td></tr>
+    <tr><td>ヘラクレア</td><td>アヴァールのカガンがローマの騎兵に夜襲をかけた場所（<span class="k">補足</span>コンスタンティノープルの西、マルマラ海の北岸）</td><td><a href="books/book-09.html#ch2">第9巻第2章</a></td></tr>
+    <tr><td>ドナウ川</td><td>スラヴ人の土地に攻め入るとき、川からおよそ1日の行程の所で待つ</td><td><a href="books/book-11.html#ch5">第11巻第5章</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>原典：Joannes Schefferus (ed.), <i>Arriani Tactica &amp; Mauricii Artis militaris libri duodecim</i>, Upsaliae 1664. Regensburg, Staatliche Bibliothek, 999/Class.170, urn:nbn:de:bvb:12-bsb11088428-7（バイエルン州立図書館デジタル版 MDZ）。地図の海岸線：Natural Earth（world-atlas 経由）。</p>
+    <p>解説の文章はすべてこのサイトの独自のものです。</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  var box = document.getElementById("map");
+  if (!window.d3 || !window.topojson) { box.querySelector(".msg").textContent = "地図を読み込めませんでした。下の各民族の説明をご覧ください。"; return; }
+  var W = 800, H = 560;
+  // 地図の範囲（経度・緯度）
+  var frame = { type: "MultiPoint", coordinates: [[-8, 27], [62, 27], [62, 56], [-8, 56], [27, 57]] };
+  var proj = d3.geoMercator().fitExtent([[0, 0], [W, H]], frame);
+  var path = d3.geoPath(proj);
+  // 民族のおおよその中心地 [経度, 緯度, 半径(度)]（一般的な知識による大まかな位置）
+  var peoples = [
+    { name: "ペルシア人", sub: "ササン朝", c: [50, 32.5], r: 6.5, col: "--p-persia", href: "#persians", lab: [50, 30.2] },
+    { name: "アヴァール人", sub: "パンノニア", c: [19.6, 46.9], r: 2.4, col: "--p-steppe", href: "#scythians", lab: [19.6, 49.9] },
+    { name: "スラヴ人", sub: "ドナウ下流の北", c: [25.6, 45.4], r: 1.8, col: "--p-slav", href: "#slavs", lab: [25.4, 48.3] },
+    { name: "アンテス人", sub: "黒海の北西", c: [31, 48], r: 2.2, col: "--p-slav", href: "#slavs", lab: [31.5, 51.0] },
+    { name: "フランク人", sub: "ガリア", c: [2.5, 47.5], r: 3.8, col: "--p-west", href: "#fairhaired", lab: [2.5, 52.6] },
+    { name: "ランゴバルド人", sub: "北イタリア", c: [10.2, 45.3], r: 1.6, col: "--p-west", href: "#fairhaired", lab: [8.6, 43.0] }
+  ];
+  var cities = [
+    { name: "コンスタンティノープル", c: [28.98, 41.01], dx: 6, dy: -7 },
+    { name: "ヘラクレア", c: [27.96, 40.97], dx: -6, dy: 14, end: true },
+    { name: "ローマ", c: [12.5, 41.9], dx: 6, dy: 4 },
+    { name: "ラヴェンナ", c: [12.2, 44.42], dx: 6, dy: 4 },
+    { name: "クテシフォン", c: [44.58, 33.09], dx: -6, dy: 4, end: true },
+    { name: "アルザネネ", c: [41.4, 38.2], dx: 6, dy: 4 }
+  ];
+  var danube = [[8.5,48.0],[10.0,48.4],[12.1,49.0],[13.45,48.57],[16.37,48.21],[17.1,48.15],[18.7,47.8],[19.05,47.5],[18.68,45.99],[19.0,45.35],[19.85,45.25],[20.46,44.82],[22.5,44.6],[22.88,43.99],[24.9,43.7],[25.95,43.85],[27.26,44.12],[28.03,44.34],[27.97,45.27],[28.05,45.43],[28.8,45.18],[29.65,45.16]];
+  d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/land-50m.json").then(function (topo) {
+    var land = topojson.feature(topo, topo.objects.land);
+    box.innerHTML = "";
+    var svg = d3.select(box).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
+      .attr("aria-labelledby", "pm-t pm-d");
+    svg.append("title").attr("id", "pm-t").text("6世紀末の諸民族のおおよその位置");
+    svg.append("desc").attr("id", "pm-d").text("東にペルシア人（ササン朝）、ドナウ川中流のパンノニアにアヴァール人、ドナウ下流の北にスラヴ人、その東の黒海の北西にアンテス人、ガリアにフランク人、北イタリアにランゴバルド人。トルコ人はさらに東の中央アジア。都コンスタンティノープルとヘラクレア、ローマ、ラヴェンナ、クテシフォン、アルザネネの位置も示す。");
+    svg.append("rect").attr("width", W).attr("height", H).attr("style", "fill:var(--map-sea)");
+    svg.append("path").datum(land).attr("d", path).attr("style", "fill:var(--map-land);stroke:var(--rule)").attr("stroke-width", 0.6);
+    svg.append("path").datum({ type: "LineString", coordinates: danube }).attr("d", path)
+      .attr("fill", "none").attr("style", "stroke:var(--map-river)").attr("stroke-width", 2.5).attr("stroke-linejoin", "round");
+    var e = proj([33.5, 38.4]);
+    svg.append("text").attr("x", e[0]).attr("y", e[1]).attr("font-size", 17).attr("text-anchor", "middle")
+      .attr("font-weight", 700).attr("fill", "currentColor").attr("opacity", 0.75).text("ローマ（東ローマ帝国）");
+    var g = svg.append("g");
+    peoples.forEach(function (p) {
+      var circ = d3.geoCircle().center(p.c).radius(p.r)();
+      g.append("path").datum(circ).attr("d", path)
+        .attr("style", "fill:var(" + p.col + ");stroke:var(" + p.col + ")").attr("fill-opacity", 0.28).attr("stroke-width", 2);
+    });
+    peoples.forEach(function (p) {
+      var xy = proj(p.lab);
+      var a = svg.append("a").attr("href", p.href);
+      a.append("text").attr("x", xy[0]).attr("y", xy[1]).attr("font-size", 19).attr("font-weight", 700)
+        .attr("text-anchor", "middle").attr("style", "fill:var(" + p.col + ")").text(p.name);
+      a.append("text").attr("x", xy[0]).attr("y", xy[1] + 17).attr("font-size", 14).attr("text-anchor", "middle")
+        .attr("style", "fill:var(--ink-soft)").text(p.sub);
+    });
+    // トルコ人（地図の外、東）
+    var t = proj([61.5, 44.5]);
+    var ta = svg.append("a").attr("href", "#scythians");
+    ta.append("text").attr("x", t[0]).attr("y", t[1]).attr("font-size", 19).attr("font-weight", 700).attr("text-anchor", "end")
+      .attr("style", "fill:var(--p-steppe)").text("トルコ人 →");
+    ta.append("text").attr("x", t[0]).attr("y", t[1] + 17).attr("font-size", 14).attr("text-anchor", "end")
+      .attr("style", "fill:var(--ink-soft)").text("突厥。さらに東の中央アジア");
+    var dl = proj([20.6, 43.5]);
+    svg.append("text").attr("x", dl[0]).attr("y", dl[1]).attr("font-size", 15).attr("text-anchor", "middle")
+      .attr("style", "fill:var(--map-river)").text("ドナウ川");
+    cities.forEach(function (c) {
+      var xy = proj(c.c);
+      svg.append("circle").attr("cx", xy[0]).attr("cy", xy[1]).attr("r", 3.5).attr("fill", "currentColor");
+      svg.append("text").attr("x", xy[0] + c.dx).attr("y", xy[1] + c.dy).attr("font-size", 14)
+        .attr("text-anchor", c.end ? "end" : "start").attr("fill", "currentColor").text(c.name);
+    });
+  }).catch(function () {
+    box.querySelector(".msg").textContent = "地図のデータを読み込めませんでした。下の各民族の説明をご覧ください。";
+  });
+});
+</script>
+</body>
+</html>
