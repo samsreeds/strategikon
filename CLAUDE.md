@@ -238,4 +238,5 @@ PDF全体を間引いて見て、`notes/page-map.md` を作る。
   - ヘッダーのナビを「全体像／巻の一覧／用語集」にまとめ、巻ページの上下に「前後の巻」のリンク（`<nav class="pager">`）を付けた
   - **`tools/update_nav.py`**：books/ にある巻ページを見て、前後の巻のリンクと index.html の巻の一覧（`<!-- books:start -->`〜`<!-- books:end -->`）を書き直す。まだない巻は「準備中」になる。**巻ページを足したら必ず実行する**
   - SVG の注意：`<use>` で複製した図形には、ページの CSS のクラス（`svg.diagram .stroke` など）が効かない。`fill`・`stroke` を属性で直接書く。また、CSS 変数は `fill="var(…)"` ではなく `style="fill:var(…)"` で書く
-- 次：段階4 の続き。第2巻、第4〜11巻のページを巻の順に作る。用語集は巻ページを作るたびに足す。intro.html、coverage.html、peoples.html、compare.html はその後
+- 2026-10-08：`books/book-02.html` を作った。説明図3枚（戦列の全体、部隊ごとの列の深さ、1つの列の武装）、一つの戦列と二つの戦列の比較表、軍の大きさと第二線の形の表。リンクとアンカーの切れを調べる簡単な確認も行った（切れなし）
+- 次：段階4 の続き。第4〜11巻のページを巻の順に作る。用語集は巻ページを作るたびに足す。intro.html、coverage.html、peoples.html、compare.html はその後
