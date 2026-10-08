@@ -193,6 +193,7 @@ aside.box > :last-child { margin-bottom: 0; }
 
 /* 表 */
 .table-wrap { overflow-x: auto; margin: 1rem 0; }
+.table-wrap.wide table { min-width: 40rem; } /* 列の多い表は、スマホでは横スクロール */
 table { border-collapse: collapse; width: 100%; font-size: 0.92rem; line-height: 1.6; }
 th, td { border-bottom: 1px solid var(--rule); padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
 th { font-weight: 700; background: var(--surface); white-space: nowrap; }
