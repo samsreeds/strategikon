@@ -244,3 +244,11 @@ svg.diagram .stroke-accent { stroke: var(--accent); fill: none; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.3rem; }
 }
+
+/* 前後の巻へのリンク */
+.pager { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.88rem; margin: 0 0 1rem; }
+main > .pager:last-child { margin: 3rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.pager a { text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+.pager .soon { color: var(--ink-soft); }
+.pager .next { margin-left: auto; text-align: right; }
