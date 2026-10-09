@@ -15,6 +15,12 @@
   .books .d { display: block; font-size: 0.9rem; color: var(--ink-soft); }
   .books .soon { font-size: 0.75rem; color: var(--ink-soft); margin-left: 0.5em; }
   @media (min-width: 640px) { .books { grid-template-columns: 1fr 1fr; } }
+  .books-map .bm-box rect { fill: var(--bg); stroke: var(--rule); stroke-width: 1.2; }
+  .books-map .bm-box text { text-anchor: middle; font-size: 15px; fill: var(--ink); }
+  .books-map .bm-box text.n { font-size: 12.5px; font-weight: 700; fill: var(--accent); }
+  .books-map .bm-head { font-size: 15px; font-weight: 700; fill: var(--accent); }
+  .books-map .bm-note { font-size: 12.5px; text-anchor: middle; fill: var(--ink-soft); }
+  .books-map a:hover rect, .books-map a:focus rect { stroke: var(--accent); stroke-width: 2.2; }
 </style>
 </head>
 <body>
@@ -52,6 +58,40 @@
 <p>読解メモは <a href="https://github.com/samsreeds/strategikon/tree/main/notes">notes/</a> にあります。</p>
 </aside>
 
+<h2 id="map12">12巻の関係</h2>
+<p>12巻は、大きく5つのまとまりに分けられます。矢印は読む順番の流れ、下の小さな字は巻どうしのつながりです。巻の名前を押すと、その巻のページが開きます。</p>
+<figure>
+<div class="plate" style="--plate-max:24rem" data-max>
+<svg class="diagram books-map" viewBox="0 0 340 634" role="group" aria-labelledby="bm-t">
+  <title id="bm-t">12巻の関係図</title>
+  <defs><marker id="bm-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--accent)"/></marker></defs>
+  <text x="0" y="18" class="bm-head">土台：軍のしくみと荷物</text>
+  <g class="bm-box"><a href="books/book-01.html" aria-label="第1巻 序論・編成と規律"><rect x="0" y="28" width="162" height="54" rx="4"/><text x="81" y="49" class="n">第1巻</text><text x="81" y="71">序論・編成と規律</text></a><a href="books/book-05.html" aria-label="第5巻 輜重と従者"><rect x="178" y="28" width="162" height="54" rx="4"/><text x="259" y="49" class="n">第5巻</text><text x="259" y="71">輜重と従者</text></a></g>
+  <text x="170" y="100" class="bm-note">第2巻以降は、第1巻の部隊の単位と呼び名を使います</text>
+  <text x="0" y="134" class="bm-head">騎兵の戦列：組み方・号令・訓練</text>
+  <g class="bm-box"><a href="books/book-02.html" aria-label="第2巻 騎兵の戦列"><rect x="0" y="144" width="104" height="54" rx="4"/><text x="52" y="165" class="n">第2巻</text><text x="52" y="187">騎兵の戦列</text></a><a href="books/book-03.html" aria-label="第3巻 配置と号令"><rect x="118" y="144" width="104" height="54" rx="4"/><text x="170" y="165" class="n">第3巻</text><text x="170" y="187">配置と号令</text></a><a href="books/book-06.html" aria-label="第6巻 戦列の型"><rect x="236" y="144" width="104" height="54" rx="4"/><text x="288" y="165" class="n">第6巻</text><text x="288" y="187">戦列の型</text></a></g>
+  <path d="M105 171 H116" fill="none" style="stroke:var(--accent)" stroke-width="1.8" marker-end="url(#bm-a)"/>
+  <path d="M223 171 H234" fill="none" style="stroke:var(--accent)" stroke-width="1.8" marker-end="url(#bm-a)"/>
+  <text x="170" y="216" class="bm-note">戦列の組み方 → 号令と陣形図 → 見せかけの型</text>
+  <text x="170" y="232" class="bm-note">第3巻の陣形図には第5巻の輜重も描かれます</text>
+  <text x="0" y="266" class="bm-head">作戦：伏兵・奇襲・攻城</text>
+  <g class="bm-box"><a href="books/book-04.html" aria-label="第4巻 伏兵とわな"><rect x="0" y="276" width="104" height="54" rx="4"/><text x="52" y="297" class="n">第4巻</text><text x="52" y="319">伏兵とわな</text></a><a href="books/book-09.html" aria-label="第9巻 奇襲と偵察"><rect x="118" y="276" width="104" height="54" rx="4"/><text x="170" y="297" class="n">第9巻</text><text x="170" y="319">奇襲と偵察</text></a><a href="books/book-10.html" aria-label="第10巻 攻城と籠城"><rect x="236" y="276" width="104" height="54" rx="4"/><text x="288" y="297" class="n">第10巻</text><text x="288" y="319">攻城と籠城</text></a></g>
+  <text x="170" y="348" class="bm-note">どれも第11巻の敵ごとの対策と重なります</text>
+  <text x="0" y="382" class="bm-head">将の心得</text>
+  <g class="bm-box"><a href="books/book-07.html" aria-label="第7巻 将の心得"><rect x="0" y="392" width="162" height="54" rx="4"/><text x="81" y="413" class="n">第7巻</text><text x="81" y="435">将の心得</text></a><a href="books/book-08.html" aria-label="第8巻 心得と格言"><rect x="178" y="392" width="162" height="54" rx="4"/><text x="259" y="413" class="n">第8巻</text><text x="259" y="435">心得と格言</text></a></g>
+  <path d="M163 419 H176" fill="none" style="stroke:var(--accent)" stroke-width="1.8" marker-end="url(#bm-a)"/>
+  <text x="170" y="464" class="bm-note">第7巻末の要点一覧は、第2巻などのまとめ直し</text>
+  <text x="0" y="498" class="bm-head">敵と歩兵</text>
+  <g class="bm-box"><a href="books/book-11.html" aria-label="第11巻 諸民族の戦い方"><rect x="0" y="508" width="162" height="54" rx="4"/><text x="81" y="529" class="n">第11巻</text><text x="81" y="551">諸民族の戦い方</text></a><a href="books/book-12.html" aria-label="第12巻 歩兵と混成戦列"><rect x="178" y="508" width="162" height="54" rx="4"/><text x="259" y="529" class="n">第12巻</text><text x="259" y="551">歩兵と混成戦列</text></a></g>
+  <path d="M163 535 H176" fill="none" style="stroke:var(--accent)" stroke-width="1.8" marker-end="url(#bm-a)"/>
+  <text x="170" y="580" class="bm-note">第11巻は、アヴァール人には第12巻の</text>
+  <text x="170" y="596" class="bm-note">「後ろへ曲がった戦列」で戦えと言います</text>
+  <text x="170" y="626" class="bm-note">巻末の陣形図は第3巻と第12巻にあります</text>
+</svg>
+</div>
+<figcaption>まとまりと矢印は、このサイトの読解にもとづく整理で、原典自身が巻をこう分けているわけではありません。</figcaption>
+</figure>
+
 <h2 id="books">全12巻</h2>
 <ul class="books">
   <!-- books:start -->
@@ -74,7 +114,7 @@
 
 <footer class="site-footer">
   <div class="inner">
-    <p>原典：Joannes Schefferus (ed.), <i>Arriani Tactica &amp; Mauricii Artis militaris libri duodecim</i>, Upsaliae 1664. Regensburg, Staatliche Bibliothek, 999/Class.170, urn:nbn:de:bvb:12-bsb11088428-7（バイエルン州立図書館デジタル版 MDZ）。</p>
+    <p>原典：Joannes Schefferus (ed.), <i>Arriani Tactica &amp; Mauricii Artis militaris libri duodecim</i>, Upsaliae 1664. Regensburg, Staatliche Bibliothek, 999/Class.170, urn:nbn:de:bvb:12-bsb11088428-7（<a href="https://www.digitale-sammlungen.de/en/view/bsb11088428">バイエルン州立図書館デジタル版 MDZ</a>、権利表示 NoC-NC）。</p>
     <p>解説の文章はすべてこのサイトの独自のものです。</p>
   </div>
 </footer>

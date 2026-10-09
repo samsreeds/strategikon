@@ -149,7 +149,7 @@ TEMPLATE = """<!doctype html>
 
 <footer class="site-footer">
   <div class="inner">
-    <p>原典：Joannes Schefferus (ed.), <i>Arriani Tactica &amp; Mauricii Artis militaris libri duodecim</i>, Upsaliae 1664. Regensburg, Staatliche Bibliothek, 999/Class.170, urn:nbn:de:bvb:12-bsb11088428-7（バイエルン州立図書館デジタル版 MDZ）。</p>
+    <p>原典：Joannes Schefferus (ed.), <i>Arriani Tactica &amp; Mauricii Artis militaris libri duodecim</i>, Upsaliae 1664. Regensburg, Staatliche Bibliothek, 999/Class.170, urn:nbn:de:bvb:12-bsb11088428-7（<a href="https://www.digitale-sammlungen.de/en/view/bsb11088428">バイエルン州立図書館デジタル版 MDZ</a>、権利表示 NoC-NC）。</p>
     <p>解説の文章はすべてこのサイトの独自のものです。</p>
   </div>
 </footer>
