@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- 旗（バンドン）：竿と、先の分かれた四角い旗 -->
+  <style>
+    .bg { fill: #fbfaf7; }
+    .pole { stroke: #3a2a20; }
+    .flag { fill: #8a3b12; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1b1a18; }
+      .pole { stroke: #e8dccf; }
+      .flag { fill: #e3a27a; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="6"/>
+  <line class="pole" x1="9" y1="4" x2="9" y2="29" stroke-width="2.6" stroke-linecap="round"/>
+  <path class="flag" d="M10.3 5.5 H27 L22.5 11.5 L27 17.5 H10.3 Z"/>
+</svg>

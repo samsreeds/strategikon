@@ -113,7 +113,8 @@ PDF全体を間引いて見て、`notes/page-map.md` を作る。
 │   ├── style.css
 │   ├── nav.js
 │   └── plates/     陣形図（SVG で描き直したもの。tools/make_plates.py で書き出す）
-├── tools/          作業用のスクリプト（make_plates.py、update_nav.py、make_coverage.py、autolink.py。サイトのビルド工程ではない）
+├── tools/          作業用のスクリプト（make_plates.py、update_nav.py、make_coverage.py、autolink.py、head_meta.py。サイトのビルド工程ではない）
+├── README.md       リポジトリの説明（目的、公開先、原典、構成、スクリプトの順番）
 ├── notes/          読解メモ（公開してよい）
 └── source/         原典PDF（.gitignore）
 ```
@@ -144,6 +145,7 @@ PDF全体を間引いて見て、`notes/page-map.md` を作る。
 1. `python tools/update_nav.py`：巻ページの前後のリンクと、index.html の巻の一覧を書き直す
 2. `python tools/make_coverage.py`：各巻ページの「照合の状況」の表から coverage.html を作る
 3. `python tools/autolink.py`：本文の用語の最初の1回を用語集へ、「#NNN」を MDZ のビューアーへリンクする（見出し・表の見出し・既存のリンク・SVG・nav・巻ページの照合の表・index.html の巻の一覧は対象外。何度実行しても同じ結果）
+4. `python tools/head_meta.py`：全ページの <head> に OGP タグ（og:title・og:description・og:type・og:url）とファビコン（assets/favicon.svg）を入れる。新しいページには `<meta name="description">` を必ず書く
 
 用語集に語を足したら、`tools/autolink.py` の `TERMS` にも足す。陣形図を直すときは `python tools/make_plates.py`。
 
@@ -152,4 +154,5 @@ PDF全体を間引いて見て、`notes/page-map.md` を作る。
 - 段階1〜4 は完了。全12巻のページ、導入、諸民族の地図、比較、用語集（50語）、状況一覧がそろい、GitHub Pages で公開中（https://samsreeds.github.io/strategikon/）
 - ギリシア語との照合は全79行が「済」（数字・人名・用語・号令の確認。記録は `notes/collation.md`）
 - 作業の記録は `notes/progress.md` にある。新しい作業もそこに書く
-- 次：読者の目で全ページを通読して、言葉づかいと説明の重なりを整える
+- 通読（巻ページとメモの突き合わせ、言葉づかい）は済んだ
+- ライセンスはユーザーが決める。決まるまで README やページに書かない
